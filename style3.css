@@ -1,0 +1,39 @@
+ul.info>li {
+    list-style: none;
+    /* color: aquamarine; */
+}
+
+ul.info>li li:nth-child(2) {
+    list-style: none;
+}
+
+ol li a {
+    text-decoration: none;
+}
+
+ol li a[target='_blank'] {
+    color: rgb(25, 143, 10);
+}
+
+ol li a[href='https://www.google.com/'] {
+    background-color: rgb(125, 175, 240);
+}
+
+ol li a[href*='google'] {
+    color: pink;
+}
+
+/* 开头选择器 */
+ol li a[href^='https'] {
+    color: rgb(44, 73, 110);
+}
+
+/* 结尾选择器 */
+ol li a[href$='.com.au'] {
+    background-color: rgb(196, 125, 240);
+}
+
+/* 合并搜索 */
+ol li a[href*='google'][href$='com.au'] {
+    font-style: italic;
+}
